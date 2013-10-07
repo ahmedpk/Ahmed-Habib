@@ -5,17 +5,17 @@ class Customer {
 
   // constructing the class
   public function __construct($newUsername) {
-    $this->customer_data[username] = $newUsername;
+    $this->customerData['username'] = $newUsername;
   }
 
   // to set customer password
   public function setPassword($newPassword) {
-    $this->customer_data[password] = $newPassword;
+    $this->customerData['password'] = $newPassword;
   }
 
   // To verify customer password
   public function checkPassword($getPassword) {
-    return ($this->customer_data[password] == $getPassword);
+    return ($this->customerData['password'] == $getPassword);
   }
 
   // Summary of customer
