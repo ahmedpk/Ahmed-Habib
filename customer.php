@@ -1,29 +1,28 @@
 <?php
-class Customer
-{
-	Public $customer_data = array("username", "password");
 
-	// constructing the class
-	Public function __construct($new_username) {
-		$this->customer_data[username] = $new_username;
-	}
+class Customer {
+  public $customerData = array();
 
-	// to set customer password
-	Public function setPassword($new_password) {
-		$this->customer_data[password] = $new_password;
-	}
+  // constructing the class
+  public function __construct($newUsername) {
+    $this->customer_data[username] = $newUsername;
+  }
 
-	// To verify customer password
-	Public function checkPassword($get_password) {
-		return ($this->customer_data[password]==$get_password)
-		? true
-		: false;
-	}
+  // to set customer password
+  public function setPassword($newPassword) {
+    $this->customer_data[password] = $newPassword;
+  }
 
-	// Summary of customer
-	Public function getSummary() {
-		return "{$this->customer_data[username]}:{$this->customer_data[password]}";
-	}
+  // To verify customer password
+  public function checkPassword($getPassword) {
+    return ($this->customer_data[password] == $getPassword);
+  }
+
+  // Summary of customer
+  public function getSummary() {
+    return "{$this->customerData['username']}:{$this->customerData['password']}";
+  }
+
 }
 
 ?>
