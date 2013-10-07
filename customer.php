@@ -22,7 +22,6 @@ class Customer {
   public function getSummary() {
     return "{$this->customerData['username']}:{$this->customerData['password']}";
   }
-
 }
 
 ?>
