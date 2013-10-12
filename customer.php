@@ -6,9 +6,9 @@ class Customer {
   public static $ALLOWED_KEYS = array('username', 'password', 'name', 'email', 'phone');
 
   public function set($key, $value) {
-   if (!empty($value) && in_array($key, self::$ALLOWED_KEYS)) {
+    if (!empty($value) && in_array($key, self::$ALLOWED_KEYS)) {
       $this->customerData[$key] = $value;
-	return true;
+      return true;
     } else {
 			return false;
 		}
